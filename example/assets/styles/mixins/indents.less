@@ -1,0 +1,84 @@
+@gap: 4px;
+
+.generate-indents(@i: 0) when (@i =< 12) {
+  .mt-@{i} {
+    margin-top: @i * @gap;
+  }
+  .mr-@{i} {
+    margin-right: @i * @gap;
+  }
+  .mb-@{i} {
+    margin-bottom: @i * @gap;
+  }
+  .ml-@{i} {
+    margin-left: @i * @gap;
+  }
+  .mx-@{i} {
+    margin-left: @i * @gap;
+    margin-right: @i * @gap;
+  }
+  .my-@{i} {
+    margin-top: @i * @gap;
+    margin-bottom: @i * @gap;
+  }
+  .pt-@{i} {
+    padding-top: @i * @gap;
+  }
+  .pr-@{i} {
+    padding-right: @i * @gap;
+  }
+  .pb-@{i} {
+    padding-bottom: @i * @gap;
+  }
+  .pl-@{i} {
+    padding-left: @i * @gap;
+  }
+  .px-@{i} {
+    padding-left: @i * @gap;
+    padding-right: @i * @gap;
+  }
+  .py-@{i} {
+    padding-top: @i * @gap;
+    padding-bottom: @i * @gap;
+  }
+  .t-@{i} {
+    top: @i * @gap;
+  }
+  .r-@{i} {
+    right: @i * @gap;
+  }
+  .b-@{i} {
+    bottom: @i * @gap;
+  }
+  .l-@{i} {
+    left: @i * @gap;
+  }
+  .generate-indents(@i + 1);
+}
+.generate-indents();
+
+
+.generate-offsets(@i: 0) when (@i =< 12) {
+  .t-offset-@{i} {
+    margin-top: -@i * @gap;
+  }
+  .r-offset-@{i} {
+    margin-right: -@i * @gap;
+  }
+  .b-offset-@{i} {
+    margin-bottom: -@i * @gap;
+  }
+  .l-offset-@{i} {
+    margin-left: -@i * @gap;
+  }
+  .x-offset-@{i} {
+    margin-left: -@i * @gap;
+    margin-right: -@i * @gap;
+  }
+  .y-offset-@{i} {
+    margin-top: -@i * @gap;
+    margin-bottom: -@i * @gap;
+  }
+  .generate-offsets(@i + 1);
+}
+.generate-offsets();

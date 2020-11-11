@@ -1,0 +1,61 @@
+@import '../assets/styles/index.less';
+
+.wrapper {
+  .px-3;
+  position: relative;
+  display: block;
+  margin: auto;
+  max-width: 1024px;
+
+  .content {
+    .mt-12;.py-12;
+  }
+}
+
+.demo-box {
+  .mt-8;.px-6;.py-6;
+  position: relative;
+  border: 1px solid var(--color-border);
+
+  &:first-child {
+    .mt-0;
+  }
+
+  &__title {
+    .t-0;.l-4;
+    .t-offset-3;
+    .px-2;
+    position: absolute;
+    background-color: var(--color-bg);
+  }
+
+  &__content {
+    .x-offset-1;.y-offset-1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  .my-1;.py-1;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-icon);
+  font-size: @icon-size;
+  width: @card-width;
+
+  &_active {
+    color: var(--color-accent);
+  }
+
+  &-caption {
+    font-size: @font-size-xs;
+  }
+}
+
+.col-content {
+  .mx-1;.my-1;
+  height: @column-height;
+  background-color: var(--color-column);
+}

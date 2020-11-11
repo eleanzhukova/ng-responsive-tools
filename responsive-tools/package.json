@@ -1,0 +1,31 @@
+{
+  "name": "ng-responsive-tools",
+  "version": "1.0.0",
+  "description": "Angular responsive directives for adding class names depending on the device, screen size and other parameters",
+  "author": "elena-lexeevna",
+  "license": "MIT",
+  "homepage": "https://github.com/elena-lexeevna/ng-responsive-tools#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elena-lexeevna/ng-responsive-tools.git"
+  },
+  "keywords": [
+    "angular",
+    "responsive",
+    "directives",
+    "class",
+    "media",
+    "device",
+    "screen",
+    "system",
+    "browser",
+    "breakpoints"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^11.0.0",
+    "@angular/core": "^11.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
