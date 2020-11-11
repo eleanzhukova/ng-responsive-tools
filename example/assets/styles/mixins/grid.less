@@ -1,0 +1,11 @@
+@col-min: 1;
+@col-max: 12;
+.generate-grid(@i: @col-min) when (@i =< @col-max) {
+  .col-@{i} {
+    width: calc(@i * 100% / @col-max);
+    min-width: calc(@i * 100% / @col-max);
+    max-width: calc(@i * 100% / @col-max);
+  }
+  .generate-grid(@i + 1);
+}
+.generate-grid();
