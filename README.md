@@ -6,13 +6,19 @@ Angular responsive directives for adding class names depending on the device, sc
 
 ## Features
 
-- easy to use
-- simply extendable
+Base:
+
 - screen breakpoints detection
 - screen orientation detection
 - device detection
 - browser detection
 - system detection
+
+Others:
+
+- easy to use
+- simply extendable
+- [live example](https://stackblitz.com/edit/ng-responsive-tools) on StackBlitz
 
 ## Directives
 
